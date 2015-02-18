@@ -1,0 +1,168 @@
+/**
+* Projeto criado por Walter Gandarella
+* walter.wgbn@gmail.com
+**/
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    background: #E0E4CC;
+}
+
+header, footer {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+
+    width: 100%;
+    background: #69D2E7;
+    height: 50px;
+    text-transform: uppercase;
+    color: #E0E4CC;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+    text-shadow: 1px 1px 2px #737373;
+}
+
+header {
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+}
+
+.lista {
+    padding: 52px 0;
+}
+    .lista ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+        .lista ul li {
+            display: block;
+            margin: 0;
+            padding: .5em 0;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+        }
+            .lista ul li .linha {
+                padding-left: 1%;
+            }
+                .lista ul li .linha input[type=checkbox] {
+                    float: left;
+                }
+                .lista ul li .linha .item {
+                    float: left;
+                    padding-left: 1%;
+                    width: 92%;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: #FA6900;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+                }
+        .lista ul li .datalhes span {
+            width: 31%;
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: .1em 1%;
+            font-size: .9em;
+            font-style: italic;
+            color: #F38630;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .lista ul li .datalhes .preco-ativo {
+            /*font-weight: bold;*/
+            color: #fff;
+            background: #F38630;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+.lista-selected {
+    background: #A7DBD8;
+}
+.lista-teclado {
+    padding-bottom: 205px;
+}
+
+.teclado {
+    position: fixed;
+    left: 0;
+    bottom: -199px;
+    text-align: center;
+    width: 100%;
+    height: 149px;
+    background: rgba(105, 210, 231, 0.25);
+
+    -webkit-transition: bottom 0.1s linear;
+    transition: bottom 0.1s linear;
+}.teclado-show {
+    bottom: 52px;
+
+    -webkit-transition: bottom 0.1s linear;
+    transition: bottom 0.1s linear;
+}
+    .teclado ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        .teclado ul li {
+            display: inline-block;
+            padding: 0;
+            margin: 0 .1em .3em .1em;
+
+            width: 40px;
+            height: 40px;
+
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+            -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+            box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+
+            background: #F38630;
+            color: #E0E4CC;
+
+            font-size: 2.1em;
+            text-align: center;
+            line-height: 1.2em;
+            cursor: pointer;
+        }
+        .teclado ul .extra {
+            background: #A7DBD8;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            line-height: 1.9em;
+            color: #666;
+        }
+
+footer {
+    bottom: 0;
+    left: 0;
+    -webkit-box-shadow: 0 -1px 4px 0 rgba(0,0,0,.3);
+    box-shadow: 0 -1px 4px 0 rgba(0,0,0,.3);
+    text-align: center;
+    color: #17496C;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+    footer i {
+        float: left;
+        padding-right: .5em;
+        display: inline-block;
+    }
+    footer span {
+        float: right;
+        display: inline-block;
+    }
